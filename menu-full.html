@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Paladar - Restaurant Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+
+
+
+    <link rel="stylesheet" href="vendor/revolution/css/revolution.all.css">
+    <link rel="stylesheet" href="vendor/revolution/css/revolution.css">
+    <link rel="stylesheet" href="vendor/aos/css/aos.css">
+    <link rel="stylesheet" href="vendor/jquery/jquery-ui.css">
+    <link rel="stylesheet" href="vendor/jquery/jquery.timepicker.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/lightGallery/css/lightgallery.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Modernizr -->
+    <script src="vendor/modernizr.js"></script>
+
+  </head>
+
+  <body id="page-top">
+    <!-- Start  Loading Mask-->
+    <div id="mask">
+        <div class="material-icon">
+            <div class="spinner">
+                <div class="right-side">
+                    <div class="bar"></div>
+                </div>
+                <div class="left-side">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="spinner color-2">
+                <div class="right-side">
+                    <div class="bar"></div>
+                </div>
+                <div class="left-side">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- End Loading Mask-->
+
+    <!-- Navigation -->
+    <header class="container-fluid header js-header-fixsmall overlayer-fixed">
+      <!-- Start Navbar-->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <a class="navbar-brand" href="index.html"><img src="img/demo/logos/logo-slider-white.png" alt=""></a>
+                        <a class="navbar-brand black" href="index.html"><img src="img/demo/logos/logo-slider-black.png" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-center onlydesktop">
+                        <ul class="navbar">
+                            <li><a href="#section-home" class="animatedScroll nav-link active">Home</a></li>
+                            <li><a class="animatedScroll nav-link" href="#section-specialities">About</a></li>
+                            <li><a class="animatedScroll nav-link" href="#section-menu">Menu</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="section-gallery.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                <div class="dropdown-menu">
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(2)">2 columns</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(3)">3 columns</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(4)">4 columns</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(5)">5 columns</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(2)">2 columns fullwidth</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(3)">3 columns fullwidth</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(4)">4 columns fullwidth</a>
+                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(5)">5 columns fullwidth</a>
+                                </div>
+                              </li>
+                            <li><a class="animatedScroll nav-link" href="#section-teamSection">Team</a></li>
+                            <li><a class="animatedScroll nav-link" href="#section-booking">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <ul class="navbar float-right onlydesktop">
+                            <li><a class="bt-orange bt-menu-reserve animatedScroll" href="#section-booking">Reservation</a></li>
+                            <li><a class="fb-ic mr-3" href="http://www.facebook.com" target="_blank" role="button"><i class="fab fa-lg fa-facebook-f"></i></a></li>
+                            <li><a class="tw-ic mr-3" href="http://www.tripadvisor.com" target="_blank" role="button"><i class="fab fa-lg fa-tripadvisor"></i></a></li>
+                            <li><a class="tw-ic mr-3" href="http://www.twitter.com" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                        </ul>
+                        <div class="col">
+                            <ul class="navbar float-right">
+                                 <li class="hambuger onlyresponsive">
+                                    <button id="trigger-overlay" class="trigger-overlay dropdown-icon"><span></span></button>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="overlay overlay-hugeinc">
+            <div class="overlay-content"><span class="trigger-overlay"></span>
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="#section-home" class="animatedScroll">Home</a></li>
+                        <li><a href="#section-specialities" class="animatedScroll">About</a></li>
+                        <li><a href="#section-menu" class="animatedScroll">Menu</a></li>
+                        <li><a href="#section-gallery" class="animatedScroll">Gallery</a></li>
+                        <li><a href="#section-teamSection" class="animatedScroll">Team</a></li>
+                        <li><a href="#section-booking" class="animatedScroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+         <!-- End Navbar-->
+    </header>
+
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    
+     
+
+<!-- Hero Section  Start -->
+<section id="section-home" class="slider slide-overlay-black single-slider">
+    <!-- START REVOLUTION -->
+    <div class="rev_slider_wrapper">
+        <div id="slider1" class="rev_slider" data-version="5.0">
+            <ul>
+
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="img/demo/slider-design/sliderbg2.jpg" data-title="Slide Title" data-transition="slotfade-horizontal">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="img/demo/menu/menu.jpg"> 
+                        
+                        <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['-80']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h2>Welcome to Paladar Restaurant</h2>
+                        </div>
+                        
+                        <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['0']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <p class="title">Our Delicious Food</p>
+                        </div>
+
+                        <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['100']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <p class="description">Paladar is a restaurant, bar and coffee roastery located on London. We have awesome<br> recipes and the most talented chefs in town.</p>
+                        </div>
+                        
+                        <div class="tp-caption" data-responsive_offset="on" data-type="text" data-height="none" data-width="['1170','1170','1170','420']" data-whitespace="normal" data-voffset="['200']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <a href="#section-menu" class="animatedScroll theme-btn btn-style-one bt-orange">OUR MENU</a>
+                                <a href="#section-specialities" class="animatedScroll theme-btn btn-style-one bt-default">ABOUT US</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+    </div>
+    <!-- END OF SLIDER WRAPPER -->
+    <a class="scroll-down animatedScroll" href="#section-specialities"><span></span></a>
+</section>
+<!-- Hero Section End -->
+
+<div class="voffset-131 big"></div>
+
+
+
+<!-- Menu Section Start -->
+<section id="section-ppal-menu" data-aos="fade-in" data-aos-duration="1000">
+    <div class="row justify-content-md-center">
+        <div class="col-12">          
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <h4 class="small center">Explore</h4>
+                        <h4 class="center title">Our Food Menu</h4>
+                    </div>
+                </div>
+                <div class="voffset-40"></div>  
+                <div class="section ppal-menu nobg ">
+                    <div class="row ">
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Main Course</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Chicken Breast <span>$33.95</span></p>
+                                    <p class="ingredients">Paupiette of chicken, blue cheese, rosemary &amp; beans.</p>
+                                </li>
+                                <li>
+                                    <p>Salmon Steak<span>$41.95</span></p>
+                                    <p class="ingredients">Salmon, butter, lemon juice, onion, garlic &amp; salad.</p>
+                                </li>
+                                <li>
+                                    <p>Chicken Crispy<span>$33.95</span></p>
+                                    <p class="ingredients">Smoked quail, crispy egg, spelt, girolles, parsley.</p>
+                                </li>
+                                <li>
+                                    <p>Grilled Fillet<span>$26.95</span></p>
+                                    <p class="ingredients">Pork fillet, ginger, garlic, honey, pepper &amp; canola oil.</p>
+                                </li>
+                                <li>
+                                    <p>Roasted Steak Roulade<span>$29.95</span></p>
+                                    <p class="ingredients">Mint parsley with apple cider vinegar, salt &amp; spices.</p>
+                                </li>
+                                <li>
+                                    <p>Sea Trout<span>$44.95</span></p>
+                                    <p class="ingredients">Roast trout, English asparagus, watercress &amp; royals.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Specialities</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Alder Grilled Seafood Paella<span>$40.95</span></p>
+                                    <p class="ingredients">Monkfish, onion, paella rice, garlic & smoked paprika.</p>
+                                </li>
+                                <li>
+                                    <p>Cordon Bleu<span>$19.95</span></p>
+                                    <p class="ingredients">Chicken breasts, ham, pepper & Swiss cheese.</p>
+                                </li>
+                                <li>
+                                    <p>Smoked Paprika Hummus<span>$13.95</span></p>
+                                    <p class="ingredients">Red peppers, roasted garlic, lemon slices, olives & mint.</p>
+                                </li>
+                                <li>
+                                    <p>Beef/Pork Ribs<span>$35.95</span></p>
+                                    <p class="ingredients">Beef ribs, ginger, garlic, honey, pepper & canola oil.</p>
+                                </li>
+                                <li>
+                                    <p>Creamy Smoked Salmon<span>$44.95</span></p>
+                                    <p class="ingredients">Smoked salmon, leek, potato soup & chives.</p>
+                                </li>
+                                <li>
+                                    <p>Boerewors<span>$29.95</span></p>
+                                    <p class="ingredients">Meat, vinger, plass wors spice &amp; some thick.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Desserts</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Tradicional Pancakes<span>$8.95</span></p>
+                                    <p class="ingredients">Milk, eggs, strawberries, butter &amp; maple syrup.</p>
+                                </li>
+                                <li>
+                                    <p>American Brunch<span>$14.95</span></p>
+                                    <p class="ingredients">Applewood smoked bacon, tomatoes &amp; green onions.</p>
+                                </li>
+                                <li>
+                                    <p>Cannoli with cream cheese<span>$15.95</span></p>
+                                    <p class="ingredients">Cheese, eggs, strawberries, butter & maple syrup.</p>
+                                </li>
+                                <li>
+                                    <p>Chocolate Cherry Cake<span>$9.95</span></p>
+                                    <p class="ingredients">Vanilla, milk, dark chocolate, cherries, eggs, butter.</p>
+                                </li>
+                                <li>
+                                    <p>Pain au chocolat<span>$3.95</span></p>
+                                    <p class="ingredients">Homemade croissant contain a bar of dark chocolate.</p>
+                                </li>
+                                <li>
+                                    <p>Tarte Tatin<span>$5.95</span></p>
+                                    <p class="ingredients">Caramelised apple tart, vanilla ice cream</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="voffset-131"></div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-12">          
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12" data-aos="fade-down" data-aos-duration="1000">
+                        <h4 class="small center">Explore</h4>
+                        <h4 class="center title">Our Pizzas</h4>
+                    </div>
+                </div>
+                <div class="voffset-40"></div>  
+                <div class="section ppal-menu nobg">
+                    <div class="row ">
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Main Course</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Chicken Breast <span>$33.95</span></p>
+                                    <p class="ingredients">Paupiette of chicken, blue cheese, rosemary &amp; beans.</p>
+                                </li>
+                                <li>
+                                    <p>Salmon Steak<span>$41.95</span></p>
+                                    <p class="ingredients">Salmon, butter, lemon juice, onion, garlic &amp; salad.</p>
+                                </li>
+                                <li>
+                                    <p>Chicken Crispy<span>$33.95</span></p>
+                                    <p class="ingredients">Smoked quail, crispy egg, spelt, girolles, parsley.</p>
+                                </li>
+                                <li>
+                                    <p>Grilled Fillet<span>$26.95</span></p>
+                                    <p class="ingredients">Pork fillet, ginger, garlic, honey, pepper &amp; canola oil.</p>
+                                </li>
+                                <li>
+                                    <p>Roasted Steak Roulade<span>$29.95</span></p>
+                                    <p class="ingredients">Mint parsley with apple cider vinegar, salt &amp; spices.</p>
+                                </li>
+                                <li>
+                                    <p>Sea Trout<span>$44.95</span></p>
+                                    <p class="ingredients">Roast trout, English asparagus, watercress &amp; royals.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Specialities</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Alder Grilled Seafood Paella<span>$40.95</span></p>
+                                    <p class="ingredients">Monkfish, onion, paella rice, garlic & smoked paprika.</p>
+                                </li>
+                                <li>
+                                    <p>Cordon Bleu<span>$19.95</span></p>
+                                    <p class="ingredients">Chicken breasts, ham, pepper & Swiss cheese.</p>
+                                </li>
+                                <li>
+                                    <p>Smoked Paprika Hummus<span>$13.95</span></p>
+                                    <p class="ingredients">Red peppers, roasted garlic, lemon slices, olives & mint.</p>
+                                </li>
+                                <li>
+                                    <p>Beef/Pork Ribs<span>$35.95</span></p>
+                                    <p class="ingredients">Beef ribs, ginger, garlic, honey, pepper & canola oil.</p>
+                                </li>
+                                <li>
+                                    <p>Creamy Smoked Salmon<span>$44.95</span></p>
+                                    <p class="ingredients">Smoked salmon, leek, potato soup & chives.</p>
+                                </li>
+                                <li>
+                                    <p>Boerewors<span>$29.95</span></p>
+                                    <p class="ingredients">Meat, vinger, plass wors spice &amp; some thick.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Desserts</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Tradicional Pancakes<span>$8.95</span></p>
+                                    <p class="ingredients">Milk, eggs, strawberries, butter &amp; maple syrup.</p>
+                                </li>
+                                <li>
+                                    <p>American Brunch<span>$14.95</span></p>
+                                    <p class="ingredients">Applewood smoked bacon, tomatoes &amp; green onions.</p>
+                                </li>
+                                <li>
+                                    <p>Cannoli with cream cheese<span>$15.95</span></p>
+                                    <p class="ingredients">Cheese, eggs, strawberries, butter & maple syrup.</p>
+                                </li>
+                                <li>
+                                    <p>Chocolate Cherry Cake<span>$9.95</span></p>
+                                    <p class="ingredients">Vanilla, milk, dark chocolate, cherries, eggs, butter.</p>
+                                </li>
+                                <li>
+                                    <p>Pain au chocolat<span>$3.95</span></p>
+                                    <p class="ingredients">Homemade croissant contain a bar of dark chocolate.</p>
+                                </li>
+                                <li>
+                                    <p>Tarte Tatin<span>$5.95</span></p>
+                                    <p class="ingredients">Caramelised apple tart, vanilla ice cream</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="voffset-131"></div>
+    <div class="row justify-content-md-center">
+        <div class="col-12">          
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12" data-aos="fade-down" data-aos-duration="1000">
+                        <h4 class="small center">Explore</h4>
+                        <h4 class="center title">Our Burgers</h4>
+                    </div>
+                </div>
+                <div class="voffset-40"></div>  
+                <div class="section ppal-menu nobg">
+                    <div class="row ">
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Main Course</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Chicken Breast <span>$33.95</span></p>
+                                    <p class="ingredients">Paupiette of chicken, blue cheese, rosemary &amp; beans.</p>
+                                </li>
+                                <li>
+                                    <p>Salmon Steak<span>$41.95</span></p>
+                                    <p class="ingredients">Salmon, butter, lemon juice, onion, garlic &amp; salad.</p>
+                                </li>
+                                <li>
+                                    <p>Chicken Crispy<span>$33.95</span></p>
+                                    <p class="ingredients">Smoked quail, crispy egg, spelt, girolles, parsley.</p>
+                                </li>
+                                <li>
+                                    <p>Grilled Fillet<span>$26.95</span></p>
+                                    <p class="ingredients">Pork fillet, ginger, garlic, honey, pepper &amp; canola oil.</p>
+                                </li>
+                                <li>
+                                    <p>Roasted Steak Roulade<span>$29.95</span></p>
+                                    <p class="ingredients">Mint parsley with apple cider vinegar, salt &amp; spices.</p>
+                                </li>
+                                <li>
+                                    <p>Sea Trout<span>$44.95</span></p>
+                                    <p class="ingredients">Roast trout, English asparagus, watercress &amp; royals.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Specialities</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Alder Grilled Seafood Paella<span>$40.95</span></p>
+                                    <p class="ingredients">Monkfish, onion, paella rice, garlic & smoked paprika.</p>
+                                </li>
+                                <li>
+                                    <p>Cordon Bleu<span>$19.95</span></p>
+                                    <p class="ingredients">Chicken breasts, ham, pepper & Swiss cheese.</p>
+                                </li>
+                                <li>
+                                    <p>Smoked Paprika Hummus<span>$13.95</span></p>
+                                    <p class="ingredients">Red peppers, roasted garlic, lemon slices, olives & mint.</p>
+                                </li>
+                                <li>
+                                    <p>Beef/Pork Ribs<span>$35.95</span></p>
+                                    <p class="ingredients">Beef ribs, ginger, garlic, honey, pepper & canola oil.</p>
+                                </li>
+                                <li>
+                                    <p>Creamy Smoked Salmon<span>$44.95</span></p>
+                                    <p class="ingredients">Smoked salmon, leek, potato soup & chives.</p>
+                                </li>
+                                <li>
+                                    <p>Boerewors<span>$29.95</span></p>
+                                    <p class="ingredients">Meat, vinger, plass wors spice &amp; some thick.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 padding030">
+                            <h4 class="small center noline">Desserts</h4>
+                            <div class="voffset-40"></div>
+                            <ul class="menu-price">
+                                <li>
+                                    <p>Tradicional Pancakes<span>$8.95</span></p>
+                                    <p class="ingredients">Milk, eggs, strawberries, butter &amp; maple syrup.</p>
+                                </li>
+                                <li>
+                                    <p>American Brunch<span>$14.95</span></p>
+                                    <p class="ingredients">Applewood smoked bacon, tomatoes &amp; green onions.</p>
+                                </li>
+                                <li>
+                                    <p>Cannoli with cream cheese<span>$15.95</span></p>
+                                    <p class="ingredients">Cheese, eggs, strawberries, butter & maple syrup.</p>
+                                </li>
+                                <li>
+                                    <p>Chocolate Cherry Cake<span>$9.95</span></p>
+                                    <p class="ingredients">Vanilla, milk, dark chocolate, cherries, eggs, butter.</p>
+                                </li>
+                                <li>
+                                    <p>Pain au chocolat<span>$3.95</span></p>
+                                    <p class="ingredients">Homemade croissant contain a bar of dark chocolate.</p>
+                                </li>
+                                <li>
+                                    <p>Tarte Tatin<span>$5.95</span></p>
+                                    <p class="ingredients">Caramelised apple tart, vanilla ice cream</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="voffset-131 bg"></div>
+
+<!-- Booking Section Start -->
+<section id="section-booking" class="section booking">              
+    <div class="row justify-content-md-center">
+        <div class="col-12">                 
+            <div class="voffset-90"></div>
+                <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12" data-aos-id="booking-section">
+                        <!--<h4 class="small medium white">Let’s</h4>-->
+                        <h4 class="white title">Book a Table</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form action="#section-booking" method="post" id="bookingform" class="booking-form row">
+                            <div class="form-group col-lg-4">
+                                <label for="input-date">Date <span><img alt="" src="img/demo/particles/arrow.svg"></span></label>
+                                <input name="date" type="text" class="form-control datepicker" id="input-date" placeholder="15-01-2019">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="input-time">Time <span><img alt="" src="img/demo/particles/arrow.svg"></span></label>
+                                <input name="time" type="text" class="form-control timepicker" id="input-time" placeholder="08:30 PM">
+                            </div>
+                            <div class="form-group col-lg-4">
+                            <label for="input-persons">Guest <span><img alt="" src="img/demo/particles/arrow.svg"></span></label>
+                                <input name="persons" type="text" class="form-control" id="input-persons" placeholder="6 people">
+                            </div>
+                            <div class="voffset-20"></div>
+                            <div class="form-group col-lg-12">
+                                <input name="email" type="text" class="form-control" id="input-email" placeholder="Your email address">
+                            </div>
+                            <div class="voffset-40"></div>
+                            <div class="form-group col-lg-12">
+                                <button type="submit" value="" class="bt-orange left">Booking Now <span><img alt="" src="img/demo/particles/arrow.svg"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            <div class="voffset-100"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Booking Section End -->
+
+<!-- Footer Section Start -->
+    <footer>  
+        <div class="voffset-50"></div>          
+        <div class="row"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <a href="index.html"><img class="logo" src="img/demo/logos/logo-slider-white.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voffset-50"></div>
+                    <div class="col-footer-1">
+                        <h4>About us</h4>
+                        <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog.</p>
+                    </div>
+                    <div class="col-footer-2">
+                        <h4>Get News & Offers</h4>
+                        <form action="#" method="post" id="newsform" class="booking-form">
+                            <div class="form-group ">
+                                <label for="input-news"></label>
+                                <input name="date" type="text" class="form-control" id="input-news" placeholder="Enter your email">
+                                <button type="submit" value="" class="bt-orange"><span class="left0"><img alt="" src="img/demo/particles/arrow.svg"></span></button>
+                            </div>
+                            <div class="voffset-50"></div>
+                            
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-footer-3 footer-contact">
+                        <h4>Contact</h4>
+                        <p>
+                            <span>677 Main Drive</span>
+                            <span>+00 123 456 7890</span>
+                            <span>North Canton, OH 44720</span>
+                            <span><a href="mailto:info@paladar.com">info@paladar.com</a></span>
+                            <span class="margintop">Monday - Wednesday </span>
+                            <span class="margintop">Wednesday - Sunday </span>
+                            <span>7:00 - 9:00PM</span>
+                            <span>8:00 - 10:30PM</span>
+                        </p>
+                    </div>                    
+                </div>
+                <div class="voffset-50"></div>
+            </div>
+            <div class="container-fluid">
+                <div class="col-12 copyright">
+                    <div class="voffset-20"></div>
+                    <div class="row">
+                        <p>Copyright 2019 Jellythemes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Booking Section End -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery/jquery-ui.js"></script>
+    <script src="vendor/jquery/jquery.timepicker.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Revolution Slider -->
+    <script src="vendor/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script src="vendor/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extensions.all.js"></script>
+
+    <!-- Animation On Screen -->
+    <script src="vendor/aos/js/aos.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="vendor/slick/slick.js"></script>
+
+    <!-- Masonry -->
+    <script src="vendor/masonry/js/isotope.pkgd.js"></script>
+
+    <!-- LightGallery -->
+    <script src="vendor/lightGallery/js/lightgallery.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/main.js"></script>
+
+    </body>
+
+</html>
