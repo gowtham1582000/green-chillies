@@ -31,6 +31,18 @@
     <!-- Modernizr -->
     <script src="vendor/modernizr.js"></script>
 
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+	    </script>
+	    <script> 
+	     $(function(){
+	 $("#header").load("header.html"); 
+	 $("#footer").load("footer.html"); 
+	    });
+    </script>
+
   </head>
 
   <body id="page-top">
@@ -39,71 +51,7 @@
      <!-- End Loading Mask-->
 
     <!-- Navigation -->
-    <header class="container-fluid header js-header-fixsmall overlayer-fixed">
-      <!-- Start Navbar-->
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row justify-content-between">
-                    <div class="col-auto">
-                        <a class="navbar-brand" href="index.html"><img src="img/demo/logos/logo-slider-white.png" alt=""></a>
-                        <a class="navbar-brand black" href="index.html"><img src="img/demo/icons/" alt=""></a>
-                    </div>
-                    <div class="d-flex justify-content-center onlydesktop">
-                        <ul class="navbar">
-                            <li><a href="index.html" class="animatedScroll nav-link active">Home</a></li>
-                            <li><a class="animatedScroll nav-link" href="#section-specialities">About</a></li>
-                            <li><a class="animatedScroll nav-link" href="#section-menu">Menu</a></li>
-                            <!--<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="section-gallery.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                                <div class="dropdown-menu">
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(2)">2 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(3)">3 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(4)">4 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(5)">5 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(2)">2 columns fullwidth</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(3)">3 columns fullwidth</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(4)">4 columns fullwidth</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(5)">5 columns fullwidth</a>
-                                </div>
-                              </li>-->
-                           
-                            <li><a class="animatedScroll nav-link" href="#section-booking">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <ul class="navbar float-right onlydesktop">
-                            <li><a class="bt-orange bt-menu-reserve animatedScroll" href="#section-booking">Reservation</a></li>
-                            <li><a class="fb-ic mr-3" href="http://www.facebook.com" target="_blank" role="button"><i class="fab fa-lg fa-facebook-f"></i></a></li>
-                            <li><a class="tw-ic mr-3" href="http://www.tripadvisor.com" target="_blank" role="button"><i class="fab fa-lg fa-tripadvisor"></i></a></li>
-                            <li><a class="tw-ic mr-3" href="http://www.twitter.com" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
-                        </ul>
-                        <div class="col">
-                            <ul class="navbar float-right">
-                                 <li class="hambuger onlyresponsive">
-                                    <button id="trigger-overlay" class="trigger-overlay dropdown-icon"><span></span></button>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       <div class="overlay overlay-hugeinc">
-            <div class="overlay-content"><span class="trigger-overlay"></span>
-                <nav id="nav">
-                    <ul>
-                        <li class="current"><a href="#section-home" class="animatedScroll">Home</a></li>
-                        <li><a href="#section-specialities" class="animatedScroll">About</a></li>
-                        <li><a href="#section-menu" class="animatedScroll">Menu</a></li>
-                        <li><a href="#section-gallery" class="animatedScroll">Gallery</a></li>
-                        <li><a href="#section-teamSection" class="animatedScroll">Team</a></li>
-                        <li><a href="#section-booking" class="animatedScroll">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-         <!-- End Navbar-->
-    </header>
+   <div id="header"></div>
 
     <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     
@@ -120,15 +68,15 @@
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="img/demo/slider-design/sliderbg1.jpg"> 
                         
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['-80']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Welcome to Paladar Restaurant</h2>
+                            <h2>Make Delightfull Memories at </h2>
                         </div>
                         
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['0']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="title">Eat Healthy and Natural Food</p>
+                            <p class="title">Hotel Green Chillies</p>
                         </div>
 
                         <div class="tp-caption" data-responsive_offset="on" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['100']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="description">Paladar is a restaurant, bar and coffee roastery located on London. We have awesome<br> recipes and the most talented chefs in town.</p>
+                            <p class="description">Feed your Appetite for Adventure !</p>
                         </div>
                         
                         <div class="tp-caption" data-responsive_offset="on" data-type="text" data-height="none" data-width="['1170','1170','1170','420']" data-whitespace="normal" data-voffset="['200']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
@@ -143,15 +91,15 @@
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="img/demo/slider-design/sliderbg2.jpg"> 
                         
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['-80']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Welcome to Paladar Restaurant</h2>
+                            <h2>Let Taste your Buds </h2>
                         </div>
                         
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['0']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="title">The Best Delicious Food</p>
+                            <p class="title">Live Deliciously</p>
                         </div>
 
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['100']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="description">Paladar is a restaurant, bar and coffee roastery located on London. We have awesome<br> recipes and the most talented chefs in town.</p>
+                            <p class="description">It's Time to Tantalize your taste Buds and satisfy your Carvings - Dig In !</p>
                         </div>
                         
                         <div class="tp-caption" data-responsive_offset="on" data-type="text" data-height="none" data-width="['1170','1170','1170','420']" data-whitespace="normal" data-voffset="['200']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
@@ -166,38 +114,15 @@
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="img/demo/slider-design/sliderbg3.jpg"> 
                         
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['-80']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Welcome to Paladar Restaurant</h2>
+                            <h2>A Classic twist on </h2>
                         </div>
                         
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['0']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="title">Eat Healthy and Natural Food</p>
+                            <p class="title">Hygiene and Quality</p>
                         </div>
 
                         <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['100']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="description">Paladar is a restaurant, bar and coffee roastery located on London. We have awesome<br> recipes and the most talented chefs in town.</p>
-                        </div>
-                        
-                        <div class="tp-caption" data-responsive_offset="on" data-type="text" data-height="none" data-width="['1170','1170','1170','420']" data-whitespace="normal" data-voffset="['200']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="btns-box">
-                                <a href="#section-menu" class="animatedScroll theme-btn btn-style-one bt-orange">OUR MENU</a>
-                                <a href="#section-specialities" class="animatedScroll theme-btn btn-style-one bt-default">ABOUT US</a>
-                            </div>
-                        </div>
-                    </li>
-
-                   <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1686" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="img/demo/slider-design/sliderbg4.jpg" data-title="Slide Title" data-transition="slotfade-horizontal">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="img/demo/slider-design/sliderbg4.jpg"> 
-                        
-                        <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['-80']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Welcome to Paladar Restaurant</h2>
-                        </div>
-                        
-                        <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['0']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="title">The Best Delicious Food</p>
-                        </div>
-
-                        <div class="tp-caption" data-x="['center']" data-hoffset="['15','135','15','15']" data-voffset="['100']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:50px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <p class="description">Paladar is a restaurant, bar and coffee roastery located on London. We have awesome<br> recipes and the most talented chefs in town.</p>
+                            <p class="description">Nothing Brings People Together Like Good food.</p>
                         </div>
                         
                         <div class="tp-caption" data-responsive_offset="on" data-type="text" data-height="none" data-width="['1170','1170','1170','420']" data-whitespace="normal" data-voffset="['200']" data-x="['center']" data-y="['middle','middle','middle','middle']" data-textalign="['center']" data-frames='[{"from":"opacity: 0;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity: 1;auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
@@ -238,16 +163,16 @@
                             <div class="sliderslide-content specialities">
                             <img src="img/demo/svg/hamburger.svg" class="filter" alt="Gourmet Burgers">
                                 <div class="voffset-15"></div>
-                                <h4>Gourmet Burgers</h4>
+                                <h4>Quality Service</h4>
                                 <div class="voffset-20"></div>
-                                <p>A winning gourmet burger comes down to four things. A patty to be proud of, a sauce to make your mouth water, a great bun and, of course, a side order of potatos</p>
+                                <p>If you’re a fan of non-vegetarian cuisine, you’re in luck, as there are plenty of great options for meat-lovers . We offers a wide range of dishes, from our south Indian dishes to Chinese foods. </p>
                             </div>
                         </div>
                         <div class="sliderslide col-lg-4 equalHW">
                             <div class="sliderslide-content specialities">
                             <img src="img/demo/svg/salad.svg" class="filter" alt="Healthy Salads">
                                 <div class="voffset-15"></div>
-                                <h4>Healthy Salads</h4>
+                                <h4>Fresh Food</h4>
                                 <div class="voffset-20"></div>
                                 <p>Salads can be healthy, satisfying meals on their own or perfect accompaniments to main dishes. Whatever sort of salad you're after, we've got a great selection</p>
                             </div>
@@ -256,7 +181,7 @@
                             <div class="sliderslide-content specialities">
                             <img src="img/demo/svg/pizza.svg" class="filter" alt="Italian Pizzas">
                                 <div class="voffset-15"></div>
-                                <h4>Italian Pizzas</h4>
+                                <h4>Fast Delivery</h4>
                                 <div class="voffset-20"></div>
                                 <p>When most of us think of Italian cuisine, we're thinking about pizza. When 9 out of 10 people talk about going out for Italian then mean they want to eat pizza.</p>
                             </div>
@@ -265,7 +190,7 @@
                             <div class="sliderslide-content specialities">
                             <img src="img/demo/svg/hamburger.svg" class="filter" alt="Gourmet Burgers">  
                                 <div class="voffset-15"></div>
-                                <h4>Gourmet Burgers</h4>
+                                <h4>Family Dining</h4>
                                 <div class="voffset-20"></div>
                                 <p>A winning gourmet burger comes down to four things. A patty to be proud of, a sauce to make your mouth water, a great bun and, of course, a side order of potatos</p>
                             </div>
@@ -295,10 +220,10 @@
                     <div class="history-content alignVCenter">
                         <div class="container-col">
                         <!--<h4 class="small medium right light">Discover your taste</h4>-->
-                        <h4 class="white title">Our History</h4>
-                        <div class="voffset-30"></div>
-                        <p>Paladar is about the combined efforts of chefs, cooks, servers, farmers, vineyards, and brewers and I see that partnership extending to our guests by providing the highest quality food.</p>
-                        <p>Numerous commentators have also referred to the supposed restaurant owner&apos;s eccentric habit of touting for custom outside his establishment, dressed in aristocratic fashion and brandishing a sword </p>
+                        <h4 class="white title">About Our Company</h4>
+                        <div style="color: orange;" class="white title">WELCOME</div>
+                        <p>It all started here. Green chillies Restaurant is owned and operated by the young generation Entrepreneurs.</p>
+                        <p>We deliver the best Indian and Chinese spicy cuisine, impeccable service, and unique atmosphere have combined to create an unmatched dining experience in Chennai.</p>
                         <div class="voffset-40"></div>
                         <a href="javascript:;" class="theme-btn btn-style-one bt-orange">Discover Menu <span><img alt="" src="img/demo/particles/arrow.svg"></span></a>
                         </div>
@@ -671,25 +596,15 @@
                     <div class="testimonials-content alignVCenter">
                         <div class="container-col">
                         <!--<h4 class="small medium right light">Some</h4>-->
-                        <h4 class="white title ">Happy Customers</h4>
-                        <div class="voffset-30"></div>
+                        <h4 class="white title ">Discover Delecious</h4>
+                        <div style="color: orange;" class="voffset-30">INDULGE IN PERFECTION.</div>
                         <div class="all-testimonials">
                             <div class="single-testimonial">
-                                <p>“Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o” </p>
-                                <p class="customer">Carolyn Meyer</p>
+                                <p>“At Green Chillies, we believe that dining is not just about the food, but also the experience. Our friendly staff, elegant atmosphere and impeccable service create the perfect setting for a special night out or a casual meal with friends and family.” </p>
+                                <br><br>
+                                <p >Our restaurant s known for its delicious and authentic Indian and Chinese cuisine, which is prepared by experienced chefs using fresh ingredients..Yes its hot and too spicy!!!</p>
                             </div>
-                            <div class="single-testimonial">
-                                <p>“Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o” </p>
-                                <p class="customer">Carolyn Meyer</p>
-                            </div>
-                            <div class="single-testimonial">
-                                <p>“Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o” </p>
-                                <p class="customer">Carolyn Meyer</p>
-                            </div>
-                            <div class="single-testimonial">
-                                <p>“Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o” </p>
-                                <p class="customer">Carolyn Meyer</p>
-                            </div>
+                            
                         </div>
                         </div>
                     </div>
