@@ -2225,6 +2225,7 @@ ul.filters li{
 .section.booking {
     background: url(../img/demo/booking/bg-booking.jpg) no-repeat center;
     background-size: cover;
+    
 }
 body.dark-version .section.booking {
     background: url(../img/demo/dark-version/booking/bg-booking.jpg) no-repeat center;
