@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="vendor/slick/slick.css">
     <link rel="stylesheet" href="vendor/lightGallery/css/lightgallery.css">
     <link rel="stylesheet" href="css/main.css">
-
+    
     <!-- Modernizr -->
 
   </head>
@@ -104,8 +104,153 @@
          <!-- End Navbar-->
     </header>
     
+<script>
+(function($) {
+  "use strict"; // Start of use strict
+  menuFull();
+  
+  $("#mask").delay(500).fadeOut("slow");
 
-    
+  
+$(".js-loadmore").on("click", function() {
+    var i = $(".js-more-items").appendTo($(".grid-gallery"));
+    return $(".grid-gallery").isotope("insert", i), e(this).hide(), !1
+})
+
+
+
+$(".js-filters").on("click", "li", function() {
+    var i = $(this).attr("data-filter");
+    $(".grid-gallery").isotope({
+        filter: i
+    })
+}).each(function(a, i) {
+    var t = $(i);
+    t.on("click", "li", function() {
+        t.find(".is-checked").removeClass("is-checked"), $(this).addClass("is-checked")
+    })
+})
+
+
+$('.slide-specialities').slick({
+  infinite: true,
+  nextArrow: '<a href="javascript:;" class="slick-next bottom mr10"></a>',
+  prevArrow: '<a href="javascript:;" class="slick-prev bottom mr10"></a>',
+  dots:true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 910,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+$('.featured-carrusel').slick({
+  infinite: true,
+  nextArrow: '<a href="javascript:;" class="slick-next bottom mr20"></a>',
+  prevArrow: '<a href="javascript:;" class="slick-prev bottom mr20"></a>',
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 910,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+$('.all-testimonials').slick({
+  infinite: true,
+  nextArrow: '<a href="javascript:;" class="slick-next bottom light mr0"></a>',
+  prevArrow: '<a href="javascript:;" class="slick-prev bottom light mr0"></a>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+$('.slide-home').slick({
+  infinite: true,
+  nextArrow: '<a href="javascript:;" class="slick-next bottom"></a>',
+  prevArrow: '<a href="javascript:;" class="slick-prev bottom"></a>',
+  dots:true,
+  dotsClass:"vertical-dots",
+  slidesToShow: 1,
+  slidesToScroll: 1
+}); 
+$('.slide-team').slick({
+  infinite: true,
+  nextArrow: '<a href="javascript:;" class="slick-next bottom"></a>',
+  prevArrow: '<a href="javascript:;" class="slick-prev bottom"></a>',
+  dots:true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 910,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+
+
+$("body").css("margin-bottom",$("footer").css("height"));
+$('.slide-specialities').find('.sliderslide-content').css("height",$('.slide-specialities').find('.slick-track').css("height"));
+
+  /* ------------------------------- */
+
+
+})(jQuery);
+function menuFull() {
+    $(".trigger-overlay").length > 0 && ($(".trigger-overlay").click(function() {
+        return $(".overlay").hasClass("open") ? ($(".overlay").removeClass("open"), $(this).removeClass("is-active")) : ($(".overlay").addClass("open"), $(this).addClass("is-active")), !1
+    }), $(".overlay").find("a").on("click", function(e) {
+        $(".overlay").removeClass("open"), $(".dropdown-icon").removeClass("is-active")
+    }))
+}
+</script>
 
 </body>
 </html>  
