@@ -2421,7 +2421,7 @@ footer{
     margin-left: 50px;
 }
 .booking-form input, .booking-form input:active, .booking-form input:focus, .booking-form input:hover{
-    border:1px solid #eaeaea;
+    border:1.5px solid #0e0e0f;
     padding: 20px 30px;
     height: auto;
     color: #ffffff;
