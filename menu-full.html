@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Paladar - Restaurant Template</title>
+    <title>Green Chillies</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,98 +31,27 @@
     <!-- Modernizr -->
     <script src="vendor/modernizr.js"></script>
 
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+	    </script>
+	    <script> 
+	      $(function(){
+	      $("#header").load("header.html"); 
+	      $("#footer").load("footer.html"); 
+	    });
+    </script>
+
   </head>
 
   <body id="page-top">
     <!-- Start  Loading Mask-->
-    <div id="mask">
-        <div class="material-icon">
-            <div class="spinner">
-                <div class="right-side">
-                    <div class="bar"></div>
-                </div>
-                <div class="left-side">
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <div class="spinner color-2">
-                <div class="right-side">
-                    <div class="bar"></div>
-                </div>
-                <div class="left-side">
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
      <!-- End Loading Mask-->
 
-    <!-- Navigation -->
-    <header class="container-fluid header js-header-fixsmall overlayer-fixed">
-      <!-- Start Navbar-->
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row justify-content-between">
-                    <div class="col-auto">
-                        <a class="navbar-brand" href="index.html"><img src="img/demo/logos/logo-slider-white.png" alt=""></a>
-                        <a class="navbar-brand black" href="index.html"><img src="img/demo/logos/logo-slider-black.png" alt=""></a>
-                    </div>
-                    <div class="d-flex justify-content-center onlydesktop">
-                        <ul class="navbar">
-                            <li><a href="#section-home" class="animatedScroll nav-link active">Home</a></li>
-                            <li><a class="animatedScroll nav-link" href="#section-specialities">About</a></li>
-                            <li><a class="animatedScroll nav-link" href="#section-menu">Menu</a></li>
-                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="section-gallery.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                                <div class="dropdown-menu">
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(2)">2 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(3)">3 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(4)">4 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas(5)">5 columns</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(2)">2 columns fullwidth</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(3)">3 columns fullwidth</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(4)">4 columns fullwidth</a>
-                                  <a class="animatedScroll dropdown-item" href="#section-gallery" onclick="chgMas1(5)">5 columns fullwidth</a>
-                                </div>
-                              </li>
-                            <li><a class="animatedScroll nav-link" href="#section-teamSection">Team</a></li>
-                            <li><a class="animatedScroll nav-link" href="#section-booking">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <ul class="navbar float-right onlydesktop">
-                            <li><a class="bt-orange bt-menu-reserve animatedScroll" href="#section-booking">Reservation</a></li>
-                            <li><a class="fb-ic mr-3" href="http://www.facebook.com" target="_blank" role="button"><i class="fab fa-lg fa-facebook-f"></i></a></li>
-                            <li><a class="tw-ic mr-3" href="http://www.tripadvisor.com" target="_blank" role="button"><i class="fab fa-lg fa-tripadvisor"></i></a></li>
-                            <li><a class="tw-ic mr-3" href="http://www.twitter.com" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
-                        </ul>
-                        <div class="col">
-                            <ul class="navbar float-right">
-                                 <li class="hambuger onlyresponsive">
-                                    <button id="trigger-overlay" class="trigger-overlay dropdown-icon"><span></span></button>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       <div class="overlay overlay-hugeinc">
-            <div class="overlay-content"><span class="trigger-overlay"></span>
-                <nav id="nav">
-                    <ul>
-                        <li class="current"><a href="#section-home" class="animatedScroll">Home</a></li>
-                        <li><a href="#section-specialities" class="animatedScroll">About</a></li>
-                        <li><a href="#section-menu" class="animatedScroll">Menu</a></li>
-                        <li><a href="#section-gallery" class="animatedScroll">Gallery</a></li>
-                        <li><a href="#section-teamSection" class="animatedScroll">Team</a></li>
-                        <li><a href="#section-booking" class="animatedScroll">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-         <!-- End Navbar-->
-    </header>
+    <!-- Header-->
+    <div id="header"></div>>
 
     <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     
@@ -239,42 +168,13 @@
                                     <p>Creamy Smoked Salmon<span>$44.95</span></p>
                                     <p class="ingredients">Smoked salmon, leek, potato soup & chives.</p>
                                 </li>
-                                <li>
+                                 <li>
                                     <p>Boerewors<span>$29.95</span></p>
                                     <p class="ingredients">Meat, vinger, plass wors spice &amp; some thick.</p>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 padding030">
-                            <h4 class="small center noline">Desserts</h4>
-                            <div class="voffset-40"></div>
-                            <ul class="menu-price">
-                                <li>
-                                    <p>Tradicional Pancakes<span>$8.95</span></p>
-                                    <p class="ingredients">Milk, eggs, strawberries, butter &amp; maple syrup.</p>
-                                </li>
-                                <li>
-                                    <p>American Brunch<span>$14.95</span></p>
-                                    <p class="ingredients">Applewood smoked bacon, tomatoes &amp; green onions.</p>
-                                </li>
-                                <li>
-                                    <p>Cannoli with cream cheese<span>$15.95</span></p>
-                                    <p class="ingredients">Cheese, eggs, strawberries, butter & maple syrup.</p>
-                                </li>
-                                <li>
-                                    <p>Chocolate Cherry Cake<span>$9.95</span></p>
-                                    <p class="ingredients">Vanilla, milk, dark chocolate, cherries, eggs, butter.</p>
-                                </li>
-                                <li>
-                                    <p>Pain au chocolat<span>$3.95</span></p>
-                                    <p class="ingredients">Homemade croissant contain a bar of dark chocolate.</p>
-                                </li>
-                                <li>
-                                    <p>Tarte Tatin<span>$5.95</span></p>
-                                    <p class="ingredients">Caramelised apple tart, vanilla ice cream</p>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
