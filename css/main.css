@@ -2775,20 +2775,7 @@ ul.menu-price li p.ingredients{
 .grid-item__rollover a {
     display: block
 }
-.grid-item__rollover a span.ico-search {
-    display: table;
-    margin: auto;
-    width: 38px;
-    height: 40px;
-    background-size: cover;
-    background: url(../img/demo/masonry/search.svg) no-repeat;
-    filter: invert(1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 
-}
 .grid-item__rollover a,
 .grid-item__rollover a:hover {
     text-decoration: none
@@ -2804,24 +2791,10 @@ ul.menu-price li p.ingredients{
     font-family: Google Sans, sans-serif
 }
 
-.grid-item__rollover .tagsinfo {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: -.8px;
-    line-height: 23px
-}
 
-.grid-item:hover .grid-item__rollover {
-    opacity: 1
-}
 
-.grid-item:hover .grid-item__rollover .containertext,
-.grid-item:hover .grid-item__rollover a>div {
-    transform: translateY(-50%)
-}
+
+
 
 .rev_slider_wrapper {
     overflow: hidden!important;
