@@ -3666,6 +3666,7 @@ a.mr-3{
     #slider1 a.bt-orange, #slider1 a.bt-default{
         margin:auto !important;
         margin-top: 20px !important;
+        
     }
     #slider1 a.bt-orange{
         margin-top: 220px !important;
@@ -3688,6 +3689,7 @@ a.mr-3{
     #slider1 a.bt-orange, #slider1 a.bt-default{
         width: 205px;
         padding:20px 0px;
+        
     }
     #slider1 a.bt-orange{
         margin-left: 70px;
