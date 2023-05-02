@@ -3708,6 +3708,7 @@ a.mr-3{
     #slider1 .btns-box{
         position: relative;
         left: 25px !important;
+        bottom:25px
     }
 }
 @media (max-width: 320px){
