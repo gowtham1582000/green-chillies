@@ -520,7 +520,7 @@ a.bt-orange.bt-menu-reserve{
 
 .navbar li .dropdown-item,
 .navbar li .nav-link {
-    color: #ffffff;
+    color: #000000;
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
@@ -703,6 +703,7 @@ li.nav-social ul .nav-link:before {
 }
 .justify-content-center{
     margin: auto;
+    margin-top: 10px;
 }
 .dropdown-icon {
     position: absolute;
@@ -724,7 +725,8 @@ li.nav-social ul .nav-link:before {
     z-index: 1;
     padding: 0;
     top: -5px;
-    background-color: transparent
+    background-color: transparent;
+    margin-top: 22px;
 }
 
 @media (min-width:768px) {
@@ -754,7 +756,7 @@ li.nav-social ul .nav-link:before {
 .dropdown-icon span {
     display: block;
     position: relative;
-    background: #fff;
+    background: #000000;
     top: 0;
     left: 0;
     right: 0;
@@ -767,7 +769,7 @@ li.nav-social ul .nav-link:before {
     display: block;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #000000;
     content: "";
     height: 2px
 }
@@ -820,7 +822,7 @@ body.dark-version.design-page .header.overlayer-fixed .dropdown-icon span:before
     background: #ffffff;
 }
 a.mr-3{
-    color: #ffffff !important;
+    color: #0e0e0f !important;
 }
 a.mr-3:hover{
     color: #ff7200 !important;
@@ -1001,9 +1003,10 @@ body.dark-version .btns-social-slider a.mr-3:hover{
 .header.overlayer-fixed {
     position: absolute;
     z-index: 3;
-    padding-top:30px;
+    padding-top:20px;
     width: 100%;
     top:0px;
+    background-color: #fff;
 }
 .header.overlayer-fixed > .row {
     max-width: 1280px;
@@ -3496,8 +3499,8 @@ a.mr-3{
 }
 
 @media (max-width: 480px){
-    .header.overlayer-fixed{ padding-top: 20px; }
-    .navbar-brand img{ margin-left: -10px; max-width: 150px; }
+    .header.overlayer-fixed{ padding-top: 20px; background-color: white; }
+    .navbar-brand img{ margin-left: -10px; }
     .header.overlayer-fixed .navbar{ top: 0px;}
     .header.overlayer-fixed.fixed-small .navbar{ top: 10px;}
     .header.overlayer-fixed.fixed-small{ padding-bottom: 0px; }
