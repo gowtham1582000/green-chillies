@@ -1019,7 +1019,7 @@ body.dark-version .btns-social-slider a.mr-3:hover{
 .header.overlayer-fixed.fixed-small {
     background-color: #fff;
     padding-bottom: 10px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .22);
+    
     width: 100%;
     position: fixed;
     padding-top: 10px;
